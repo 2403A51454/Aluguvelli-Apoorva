@@ -1,0 +1,92 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNiWdQu/mYtpUJizo7URTgr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/2403A51454/Aluguvelli-Apoorva/blob/main/sample.ipnyb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "irvR6KLYe1Cw",
+        "outputId": "f0b323aa-b8fc-4728-92dd-3b3f23688bcf"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "List: [1, 2, 'apple', 4.5, True]\n",
+            "Tuple: (10, 'banana', False, 20.0)\n",
+            "Dictionary: {'name': 'Alice', 'age': 30, 'city': 'New York'}\n",
+            "\n",
+            "DataFrame:\n",
+            "    Name  Age    City\n",
+            "0   John   25  London\n",
+            "1   Jane   30   Paris\n",
+            "2   Mike   35  Berlin\n",
+            "3  Sarah   28    Rome\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Create a list\n",
+        "my_list = [1, 2, \"apple\", 4.5, True]\n",
+        "print(\"List:\", my_list)\n",
+        "\n",
+        "# Create a tuple\n",
+        "my_tuple = (10, \"banana\", False, 20.0)\n",
+        "print(\"Tuple:\", my_tuple)\n",
+        "\n",
+        "# Create a dictionary\n",
+        "my_dictionary = {\n",
+        "    \"name\": \"Alice\",\n",
+        "    \"age\": 30,\n",
+        "    \"city\": \"New York\"\n",
+        "}\n",
+        "print(\"Dictionary:\", my_dictionary)\n",
+        "\n",
+        "# Create a Pandas DataFrame\n",
+        "# First, import the pandas library\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Create a dictionary of data to populate the DataFrame\n",
+        "data = {\n",
+        "    'Name': ['John', 'Jane', 'Mike', 'Sarah'],\n",
+        "    'Age': [25, 30, 35, 28],\n",
+        "    'City': ['London', 'Paris', 'Berlin', 'Rome']\n",
+        "}\n",
+        "\n",
+        "# Create the DataFrame from the dictionary\n",
+        "my_dataframe = pd.DataFrame(data)\n",
+        "print(\"\\nDataFrame:\")\n",
+        "print(my_dataframe)"
+      ]
+    }
+  ]
+}
